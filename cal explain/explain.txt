@@ -1,0 +1,14 @@
+npm install -g json-server
+// تغيير منفذ عرض قاعدة بيانات جيسون
+json-server -p 5000 --watch db.json
+
+
+// index.js
+module.exports = () => {
+  const data = { users: [] }
+  // Create 1000 users
+  for (let i = 0; i < 1000; i++) {
+    data.users.push({ id: i, name: `user${i}` })
+  }
+  return data
+}
