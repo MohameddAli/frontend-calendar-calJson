@@ -47,13 +47,8 @@ const FormWrapper = styled(ShadowWrapper)`
 `;
 
 
-
-<<<<<<< HEAD
 const url = process.env.API_URL ? process.env.API_URL : 'http://localhost:3001';
 
-=======
-const url = 'http://localhost:3001';
->>>>>>> 6118772de02cb4c12202f98c3ffb016d1fc8d3f2
 const totalDays = 42;
 // هذا المتغير في حالة ان خانة التقويم فارغة فأنها تظهر لك فارغة لو الكود هذا مش موجود مش حيخدم التطبيق
 const defaultEvent = {
